@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+   
+
+    <h1>Listening exercise</h1>
+
+<h2>Tips:</h2>
+
+<ol>
+
+    <li>Study natural pronunciation</li>
+
+    <li>Listen to TED talks</li>
+
+    <li>Surround yourself with different accents, voices & contexts</li>
+
+    <li>Write what you hear</li>
+
+    <li>Watch without subtitles</li>
+
+  </ol>
+
+</form>
+
+
+
+
+<audio controls>
+
+   
+
+    <source src="horse.mp3" type="audio/mpeg">
+
+ 
+
+  </audio>
+
+  <br><br>
+
+  <ol>
+
+  <h2>Choose the correct name</h2>
+
+ 
+
+  <li> <label for="text">Who would give money to charity? :</label>
+
+
+
+
+  <select name="q1">
+
+    <div>
+
+    <option value="Emma">Emma</option>
+
+    <option value="Duncan">Duncan</option>
+
+    <option value="nobody">nobody</option>
+
+    <option value="Lousie">Lousie</option>
+
+
+
+
+  </select>
+
+<br><br>
+
+<li><label for="people">Who would stop working? :</label>
+
+
+
+
+  <select name="people" id="people">
+
+    <option value="Emma">Emma</option>
+
+    <option value="Duncan">Duncan</option>
+
+    <option value="nobody">nobody</option>
+
+    <option value="Lousie">Lousie</option>
+
+  </select>
+
+  <br><br>
+
+  <li> <label for="people">Who would buy a big country house?:</label>
+
+
+
+
+  <select name="people" id="people">
+
+    <option value="Emma">Emma</option>
+
+    <option value="Duncan">Duncan</option>
+
+    <option value="nobody">nobody</option>
+
+    <option value="Lousie">Lousie</option>
+
+  </select>
+
+  <br><br>
+
+  <li> <label for="people">Who would study something creative?:</label>
+
+
+
+
+  <select name="people" id="people">
+
+    <option value="Emma">Emma</option>
+
+    <option value="Duncan">Duncan</option>
+
+    <option value="nobody">nobody</option>
+
+    <option value="Lousie">Lousie</option>
+
+  </select>
+
+  <br><br>
+
+  <li><label for="people">Who would go travelling? :</label>
+
+
+
+
+  <select name="people" id="people">
+
+    <option value="Emma">Emma</option>
+
+    <option value="Duncan">Duncan</option>
+
+    <option value="nobody">nobody</option>
+
+    <option value="Lousie">Lousie</option>
+
+  </select>
+
+  <br><br>
+
+  <li> <label for="people">Who would give the money to family members?:</label>
+
+
+
+
+  <select name="people" id="people">
+
+    <option value="Emma">Emma</option>
+
+    <option value="Duncan">Duncan</option>
+
+    <option value="nobody">nobody</option>
+
+    <option value="Lousie">Lousie</option>
+
+  </select>
+
+  <br><br>
+
+  <li> <label for="people">Who would buy a horse? :</label>
+
+
+
+
+  <select name="people" id="people">
+
+    <option value="Emma">Emma</option>
+
+    <option value="Duncan">Duncan</option>
+
+    <option value="nobody">nobody</option>
+
+    <option value="Lousie">Lousie</option>
+
+  </select>
+
+  <br><br>
+
+  <li> <label for="people">Who would save some of the money for later?:</label>
+
+
+
+
+  <select name="people" id="people">
+
+    <option value="Emma">Emma</option>
+
+    <option value="Duncan">Duncan</option>
+
+    <option value="nobody">nobody</option>
+
+    <option value="Lousie">Lousie</option>
+
+  </select>
+
+</ol>
+
+
+
+
+<button type="button" onclick="checkAnswers()">Check answers</button>
+
+
+
+
+<div id="results"></div>
+
+ 
+
+  <script>
+
+    function checkAnswers() {
+
+      var q1 = document.getElementById("q1").value;
+
+      var q2 = document.getElementById("q2").value;
+
+     
+
+      if (q1 == "Duncan" ) {
+
+        document.getElementById("results").innerHTML = "Congratulations! You got both answers correct!";
+
+      } else if (q1 == "Duncan") {
+
+        document.getElementById("results").innerHTML = "You got the first question correct, but the second one wrong.";
+
+      } else if (q2 == "Asia") {
+
+        document.getElementById("results").innerHTML = "You got the second question correct, but the first one wrong.";
+
+      } else {
+
+        document.getElementById("results").innerHTML = "Sorry, both answers are incorrect. Please try again.";
+
+      }
+
+    }
+
+  </script>
+
+ 
+
+
+
+
+</body>
+
+</html>

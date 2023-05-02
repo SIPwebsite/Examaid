@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grammer</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows:  1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .div1 {
+            padding: 0px;
+            background-color: rgb(82, 131, 60);
+            max-height: 300px;
+            padding: 50px;
+        }
+        .div1 h1 {
+            /* margin: 100px; */
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            font-size: 40px;
+            text-decoration: none;
+            display: block;
+        
+            padding: 30px;
+            padding-right: 90px;
+            padding-left: 90px;
+            border: 2px solid #ffffff;
+
+
+        }
+
+        .div2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .sadaļas li {
+            text-align: center;
+            padding: 30px;
+            /* background-color: darkseagreen; */
+            list-style-type: none;
+            }
+
+        .sadaļas li a{
+            text-align: center;
+            padding: 30px;
+            padding-right: 90px;
+            padding-left: 90px;
+            border: 2px solid #BDE4ED;
+            border-radius: 45px;
+            color: #fff;
+            background-color: #BDE4ED;
+            font-size: 30px;
+            text-decoration: none;
+            display: block;
+            width: 70%;
+            color: black;
+            
+
+        }
+        .div3 {
+            grid-area: 2 / 2 / 3 / 3;
+            
+        }
+        .left, .right {
+            padding: 15px;
+            background-color: rgb(221, 203, 252);
+            width: 40%;
+            display: inline-block;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 30px;
+            padding-left: 30px;
+            vertical-align: top;
+            
+            
+            
+            
+        }
+        .saturs li {
+            text-align: center;
+            padding: 30px;
+            list-style-type: none;
+        }
+
+        .saturs li a{
+            text-align: center;
+            padding: 30px;
+            padding-right: 90px;
+            padding-left: 90px;
+            border: 2px solid #d2ffa8;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #daf795;
+            font-size: 30px;
+            text-decoration: none;
+            display: block;
+            width: 70%;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+        <div class="div1">
+            <h1>EXAM AID</h1>
+        </div>
+    <div class="parent">
+        
+        <div class="div2"> 
+            <ol class="sadaļas">
+                <li><a href="speaking.html">speaking</a></li>
+                <li><a href="writing.html" style="color: black;">writing</a></li>
+                <li><a href="listening.html" style="color: black;">listening</a></li>
+                <li><a href="reading.html" style="color: black;">reading</a></li>
+                
+
+                
+            </ol>
+        </div>
+        <div class="div3">
+            <p class="left">
+                Hello! Are you ready for your exams? If not, this website is just the help you need! We have collected all the necessary information that you will need to study.</p>
+            <p class="right">Need help? Are you lost? Here are exams from the previous years and the Oxford dictionary! Just click on the buttons located below!</p>
+
+            <ol class="saturs">
+                <li><a href="https://www.visc.gov.lv/lv/valsts-parbaudes-darbu-uzdevumi" style="color: black;">last years exams</a></li>
+                <li><a href="https://www.oxfordlearnersdictionaries.com/definition/english/" style="color: black;">dictionary</a></li>
+            </ol>
+        </div>
+       
+    </div>
+</body>
+
+</html>
